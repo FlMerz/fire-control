@@ -6,22 +6,6 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 ## Contents
  - [How it works](#how-it-works)
  - [Wishlist](#wishlist)
- - [Quick start](#quick-start)
-   - Installing
-     - [Through Library Manager](#install-through-library-manager)
-     - [From Github](#checkout-from-github)
-   - [Using](#using)
- - [Documentation](#documentation)
-   - [Access Point Password](#password-protect-the-configuration-access-point)
-   - [Callbacks](#callbacks)
-   - [Configuration Portal Timeout](#configuration-portal-timeout)
-   - [On Demand Configuration](#on-demand-configuration-portal)
-   - [Custom Parameters](#custom-parameters)
-   - [Custom IP Configuration](#custom-ip-configuration)
-   - [Filter Low Quality Networks](#filter-networks)
-   - [Debug Output](#debug)
- - [Troubleshooting](#troubleshooting)
- - [Releases](#releases)
  - [Contributors](#contributions-and-thanks)
 
 
