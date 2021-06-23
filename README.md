@@ -17,7 +17,9 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 	- Automatic mode: the flap will be controlled automatically by the system according to a previously defined burn-off plan. 
 
 ## How It Looks
-
+![booting](https://user-images.githubusercontent.com/53577414/123109810-d6647980-d43b-11eb-9570-e12224c6d13f.png)
+![home](https://user-images.githubusercontent.com/53577414/123109827-d9f80080-d43b-11eb-95b0-4ad41f2cfa8b.png)
+![settings](https://user-images.githubusercontent.com/53577414/123109835-dc5a5a80-d43b-11eb-82d9-8ec2d7592104.png)
 
 ## Wishlist
 - [x] Touch Screen User Interface
