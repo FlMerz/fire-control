@@ -33,15 +33,15 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 	- Automatic mode: the flap will be controlled automatically by the system according to a previously defined burn-off plan. 
 
 ## How It Looks
-![ESP8266 WiFi Captive Portal Homepage](http://i.imgur.com/YPvW9eql.png) ![ESP8266 WiFi Captive Portal Configuration](http://i.imgur.com/oicWJ4gl.png)
+
 
 ## Wishlist
 - [x] Touch Screen User Interface
 - [x] automatic burning control mode
 - [x] Adjustable temperature thresholds
-- [] Adjustable flap angle
-- [] Push Notifications
-- [] Sensor Data History/Analysis
+- [ ] Adjustable flap angle
+- [ ] Push Notifications
+- [ ] Sensor Data History/Analysis
 
 ## Quick Start
 will follow
