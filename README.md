@@ -30,6 +30,10 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 - [ ] Sensor Data History/Analysis
 
 ## Quick Start
+### Required Components
+- Raspberry Pi 2/3/4/Zero W
+- 2x MAX6675 thermocouple temperature sensor (https://www.ebay.de/itm/263964113903?chn=ps&norover=1&mkevt=1&mkrid=707-134425-41852-0&mkcid=2&itemid=263964113903&targetid=1270189284895&device=c&mktype=pla&googleloc=9042036&poi=&campaignid=10215345553&mkgroupid=121910809866&rlsatarget=pla-1270189284895&abcId=1139676&merchantid=138392580&gclid=Cj0KCQjw2tCGBhCLARIsABJGmZ5eEra1b4BY8w6KihOV1sGYpxA53kfeBiOwwdrOmiQ_DBX4XFSt5ocaAoviEALw_wcB)
+- Nextion HMI Display
 ### Pinout 
 ![Pinout_fire-control](https://user-images.githubusercontent.com/53577414/123318071-19534980-d52f-11eb-9d3f-2edc4d2faeeb.png)
 
