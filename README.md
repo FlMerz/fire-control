@@ -25,8 +25,8 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 - [x] Touch Screen User Interface
 - [x] automatic burning control mode
 - [x] Adjustable temperature thresholds
-- [ ] Adjustable flap angle
-- [ ] Push Notifications
+- [X] Adjustable flap angle
+- [ ]Push Notifications
 - [ ] Sensor Data History/Analysis
 
 ## Quick Start
