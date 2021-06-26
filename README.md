@@ -30,7 +30,13 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 - [ ] Sensor Data History/Analysis
 
 ## Quick Start
-will follow
+### Required Components
+- Raspberry Pi 2/3/4/Zero W
+- 2x MAX6675 thermocouple temperature sensor (https://www.ebay.de/itm/263964113903?chn=ps&norover=1&mkevt=1&mkrid=707-134425-41852-0&mkcid=2&itemid=263964113903&targetid=1270189284895&device=c&mktype=pla&googleloc=9042036&poi=&campaignid=10215345553&mkgroupid=121910809866&rlsatarget=pla-1270189284895&abcId=1139676&merchantid=138392580&gclid=Cj0KCQjw2tCGBhCLARIsABJGmZ5eEra1b4BY8w6KihOV1sGYpxA53kfeBiOwwdrOmiQ_DBX4XFSt5ocaAoviEALw_wcB)
+- Nextion HMI Display
+- 5V Stepper Motor 28BYJ-48 (https://www.ebay.de/itm/124249372345?chn=ps&norover=1&mkevt=1&mkrid=707-134425-41852-0&mkcid=2&itemid=124249372345&targetid=1270189284895&device=c&mktype=pla&googleloc=9042036&poi=&campaignid=10215345553&mkgroupid=121910809866&rlsatarget=pla-1270189284895&abcId=1139676&merchantid=264423133&gclid=Cj0KCQjw2tCGBhCLARIsABJGmZ7SxR_i_RQwt0P7kzWOgs_puYKtfj3WOd3sbRYRelPgXiuvWWkBhAMaArTDEALw_wcB)
+### Pinout 
+![Pinout_fire-control](https://user-images.githubusercontent.com/53577414/123318071-19534980-d52f-11eb-9d3f-2edc4d2faeeb.png)
 
 ### Contributions and thanks
 The support and help I got from the community has been nothing short of phenomenal. I can't thank you guys enough. This is my first real attept in developing open source stuff and I must say, now I understand why people are so dedicated to it, it is because of all the wonderful people involved.
