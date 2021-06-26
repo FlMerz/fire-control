@@ -2,11 +2,11 @@
 import serial
 import threading
 import time
-import Zyklussteuerung
-import Tempschwellen
-import Klappensteuerung
+import cycle_control
+import temperature_limits as TempLimits
+import flap_control as flap
 import Tools
-import Tempsensorsteuerung
+import sensor_temperature_control as TempSensor
 import Statistik
 import os 
 from subprocess import call                        
@@ -15,7 +15,7 @@ from subprocess import call
 
 #Kalibrierungslauf
 Tools.sendcommand('Boot.t0.txt="kalibrierung..."')   #Bootfenster kalibrieren anzeigen
-Klappensteuerung.Kalibrieren()
+flap.Kalibrieren()
 time.sleep(4)
 Tools.sendcommand("page Home")                  #Home Screen anzeigen
 Tools.sendcommand("bt0.val=1")
@@ -26,7 +26,7 @@ Tools.sendcommand("bt4.val=0")
 Tools.leereInputBuffer()                    #Input Buffer löschen
 
 #starte Thread für das ständige updaten der Temperaturanzeige
-thread_temp = threading.Thread(target=Tempsensorsteuerung.updateTemperatur).start()
+thread_temp = threading.Thread(target=TempSensor.updateTemperatur).start()
 
 
 #Daten empfangen und darauf reagieren
@@ -41,7 +41,7 @@ while True:
         #---------s2b1: Automatik Settings öffnen   ------------------
         if recieved_command=="s2b1":        #Automatik Settings
             print("Automatik Settings Werte holen")
-            Tempschwellen.updateTemperaturschwellen()      #Temperaturschwellen updaten
+            TempLimits.updateTemperaturschwellen()      #Temperaturschwellen updaten
 
         #---------s2b2: Open Statistik ----------------------
         if recieved_command=="s2b2":
@@ -52,38 +52,38 @@ while True:
         #---------s3b0: Automatik Settings Werte einlesen ------------------
         if recieved_command=="s3b0":        #Automatik Settings
            print("Automatik Settings Werte einlesen")
-           Tempschwellen.Werte_einlesen()     #Temperaturschwellen einlesen
+           TempLimits.Werte_einlesen()     #Temperaturschwellen einlesen
 
         
         #---------s0b4: Zyklus starten ----------------------
         if recieved_command=="s0b4":
             #starte Zyklus in neuem Thread
-            Zyklussteuerung.starteZyklus()
+            cycle_control.starteZyklus()
 
         #---------s11b0: Zyklus abbrechen ----------------------
         if recieved_command=="s11b0":
-            Zyklussteuerung.stoppeZyklus()
+            cycle_control.stoppeZyklus()
 
         #---------s11b2: Holz nachlegen ----------------------
         if recieved_command=="s11b2":
-            Zyklussteuerung.nachlegen_triggern()
+            cycle_control.nachlegen_triggern()
 
 
         #---------s0b1: manuell Phase 1 ansteuern ----------------------
         if recieved_command=="s0b1":
-            Klappensteuerung.phase1()
+            flap.phase1()
 
         #---------s0b2: manuell Phase 2 ansteuern ----------------------
         if recieved_command=="s0b2":
-            Klappensteuerung.phase2()
+            flap.phase2()
 
         #---------s0b3: manuell Phase 3 ansteuern ----------------------
         if recieved_command=="s0b3":
-            Klappensteuerung.phase3()   
+            flap.phase3()   
 
         #---------s0b0: manuell Phase 4 ansteuern ----------------------
         if recieved_command=="s0b0":
-            Klappensteuerung.phase4()
+            flap.phase4()
             
         #---------s14b1: Lösche Error Log ----------------------
         if recieved_command=="s14b1":
@@ -97,6 +97,7 @@ while True:
 
         Tools.leereInputBuffer() #Input Buffer löschen
     except Exception as e:
+        
         print("Fehler in main:")
         Tools.sendcommand('Error.t1.txt="'+str(e)+'"')
         print(str(e))

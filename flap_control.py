@@ -6,7 +6,7 @@
 #It provides several methods which can be used to controle the motor
 
 
-#-------------Imports--------------------------------d
+#-------------Imports--------------------------------
 import stepper_self as stepper
 import Tools
 

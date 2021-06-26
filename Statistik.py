@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import Tools
-import Tempsensorsteuerung
+import sensor_temperature_control as TempSensor
 import math
 import time
 import threading
@@ -16,8 +16,8 @@ def setStatistik():
     print("Werte für Statistik werden abgerufen")
     while runStatistik:
         print("neue Runde")
-       ## TempRauchgas = Tempsensorsteuerung.getTempRauchgas()
-       ## TempRaum = Tempsensorsteuerung.getTempRaumTemp()
+       ## TempRauchgas = TempSensor.getTempRauchgas()
+       ## TempRaum = TempSensor.getTempRaumTemp()
 
        ## if TempRauchgas < 0:
          ##   TempRauchgas = 0
