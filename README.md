@@ -6,7 +6,6 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 ## Contents
  - [How it works](#how-it-works)
  - [Wishlist](#wishlist)
- - [Contributors](#contributions-and-thanks)
 
 
 ## How It Works
@@ -38,7 +37,5 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 ### Pinout 
 ![Pinout_fire-control](https://user-images.githubusercontent.com/53577414/123318071-19534980-d52f-11eb-9d3f-2edc4d2faeeb.png)
 
-### Contributions and thanks
-The support and help I got from the community has been nothing short of phenomenal. I can't thank you guys enough. This is my first real attept in developing open source stuff and I must say, now I understand why people are so dedicated to it, it is because of all the wonderful people involved.
 
 
