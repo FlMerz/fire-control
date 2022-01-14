@@ -20,6 +20,10 @@ Burning control system for fireplace stoves using Nextion HMI and Raspberry Pi
 ![booting_small](https://user-images.githubusercontent.com/53577414/123110642-905be580-d43c-11eb-8eb2-37df1d14c5b0.png)
 ![settings_small](https://user-images.githubusercontent.com/53577414/123110644-90f47c00-d43c-11eb-8065-2305f856193a.png)
 
+## Impressions
+![fire-control](https://user-images.githubusercontent.com/53577414/149463255-b99b07d2-29c2-4a4e-be87-ae77c10c27b2.jpeg)
+![flap](https://user-images.githubusercontent.com/53577414/149463260-3e0a08ad-02e7-45c6-8657-7b02c968353e.jpeg)
+
 ## Wishlist
 - [x] Touch Screen User Interface
 - [x] automatic burning control mode
